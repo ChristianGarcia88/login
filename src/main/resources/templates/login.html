@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form th:action="@{/envio}" method="post">
+<label   style="color: red;" th:text="${error}" /> </br>
+<label   style="color:green;" th:text="${logout}" /> </br>
+<label>User:</label><input type="text"  name="usuario" /> <br>
+
+<label>Password	:</label><input type="text"  name="clave" /> </br>
+<button>Presionar</button>
+
+</form>
+
+
+</body>
+</html>
